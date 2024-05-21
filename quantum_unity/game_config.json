@@ -1,0 +1,143 @@
+{
+  "action_space": {
+    "name": "Inputs",
+    "type": "SPACE",
+    "dims": [
+      {
+        "id": "GlobalObjectId_V1-1-4a9f4e5b2efda7048816ff1b9de329d8-5698680412635615501-0",
+        "name": "modl Dummy / Bootstrap",
+        "type": "SPACE",
+        "dims": [
+          {
+            "id": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|LocalInput",
+            "name": "LocalInput",
+            "type": "SPACE",
+            "dims": [
+              {
+                "id": "ModlRawMove",
+                "name": "ModlRawMove",
+                "type": "SPACE",
+                "dims": [
+                  {
+                    "id": "x",
+                    "name": "x",
+                    "type": "CONTINUOUS_DIMENSION",
+                    "min_value": -1,
+                    "max_value": 1
+                  },
+                  {
+                    "id": "y",
+                    "name": "y",
+                    "type": "CONTINUOUS_DIMENSION",
+                    "min_value": -1,
+                    "max_value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "feature_space": {
+    "name": "Observations",
+    "type": "SPACE",
+    "dims": [
+      {
+        "id": "GlobalObjectId_V1-1-4a9f4e5b2efda7048816ff1b9de329d8-5698680412635615501-0",
+        "name": "modl Dummy / Bootstrap",
+        "type": "SPACE",
+        "dims": [
+          {
+            "id": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|UnityEngine.Transform",
+            "name": "Transform",
+            "type": "SPACE",
+            "dims": [
+              {
+                "id": "position",
+                "name": "position",
+                "type": "SPACE",
+                "dims": [
+                  {
+                    "id": "x",
+                    "name": "x",
+                    "type": "CONTINUOUS_DIMENSION"
+                  },
+                  {
+                    "id": "y",
+                    "name": "y",
+                    "type": "CONTINUOUS_DIMENSION"
+                  },
+                  {
+                    "id": "z",
+                    "name": "z",
+                    "type": "CONTINUOUS_DIMENSION"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "object_space": {
+    "name": "Extras",
+    "type": "SPACE",
+    "dims": [
+      {
+        "id": "GlobalObjectId_V1-1-4a9f4e5b2efda7048816ff1b9de329d8-5698680412635615501-0",
+        "name": "modl Dummy / Bootstrap",
+        "type": "SPACE",
+        "dims": [
+          {
+            "id": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|UnityEngine.Transform",
+            "name": "Transform",
+            "type": "SPACE",
+            "dims": [
+              {
+                "id": "position",
+                "name": "position",
+                "type": "SPACE",
+                "dims": [
+                  {
+                    "id": "x",
+                    "name": "x",
+                    "type": "CONTINUOUS_DIMENSION"
+                  },
+                  {
+                    "id": "y",
+                    "name": "y",
+                    "type": "CONTINUOUS_DIMENSION"
+                  },
+                  {
+                    "id": "z",
+                    "name": "z",
+                    "type": "CONTINUOUS_DIMENSION"
+                  }
+                ],
+                "tags": [
+                  "position"
+                ]
+              }
+            ]
+          }
+        ],
+        "tags": [
+          "player"
+        ]
+      }
+    ]
+  },
+  "sensor_space": {
+    "name": "SENSOR_SPACE",
+    "type": "SPACE"
+  },
+  "feature_granularity": [
+    1,
+    1,
+    1
+  ],
+  "brain_version": "11.2.0"
+}

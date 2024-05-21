@@ -66,11 +66,11 @@ MonoBehaviour:
         RawValue: 0
       BoxExtents:
         X:
-          RawValue: 327680
+          RawValue: 3276800
         Y:
           RawValue: 32768
         Z:
-          RawValue: 327680
+          RawValue: 3276800
       SmoothSphereMeshCollisions: 0
       StaticData:
         Name: Floor

@@ -153,6 +153,7 @@ namespace Modl.Editor.Builds
 
         public void OnPostprocessBuild(BuildReport report)
         {
+            /*
             try
             {
                 // disable asset importing while we're modifying the prefabs.
@@ -181,7 +182,7 @@ namespace Modl.Editor.Builds
             {
                 // finally ensure we release the AssetDatabase
                 AssetDatabase.StopAssetEditing();
-            }
+            }*/
         }
         
         /// <summary>

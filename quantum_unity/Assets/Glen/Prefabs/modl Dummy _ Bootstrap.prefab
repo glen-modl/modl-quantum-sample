@@ -12,8 +12,11 @@ GameObject:
   - component: {fileID: 5353517284941214950}
   - component: {fileID: 8295768741943584242}
   - component: {fileID: 6671854667914005896}
+  - component: {fileID: 1513600269573980424}
+  - component: {fileID: 4327967300628891544}
+  - component: {fileID: 5739658213411029465}
   m_Layer: 0
-  m_Name: modl Dummy
+  m_Name: modl Dummy _ Bootstrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,3 +110,45 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1513600269573980424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5698680412635615501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d683f69fa54927941d89f30024cd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentReference: GlobalObjectId_V1-1-4a9f4e5b2efda7048816ff1b9de329d8-5698680412635615501-0
+  sceneBasedID: 
+  stickToPrefab: 1
+--- !u!114 &4327967300628891544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5698680412635615501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80a0dde3922e0f47b2e12ce66a4cfdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ModlRawMove: {x: 0, y: 0}
+--- !u!114 &5739658213411029465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5698680412635615501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871de3117ded5c0489b3344cf832ebbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectToTrack: {fileID: 0}
+  objectToFollow: {fileID: 5698680412635615501}

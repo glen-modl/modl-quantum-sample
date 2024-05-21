@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bootstrap : MonoBehaviour
 {
@@ -13,6 +11,11 @@ public class Bootstrap : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+
     }
     private void Update()
     {

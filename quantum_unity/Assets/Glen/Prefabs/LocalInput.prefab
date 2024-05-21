@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6528035199512301652}
   - component: {fileID: 8305324513719505667}
   - component: {fileID: 6048470812769987058}
+  - component: {fileID: -7735651491431483354}
   m_Layer: 0
   m_Name: LocalInput
   m_TagString: Untagged
@@ -59,3 +60,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToTrack: {fileID: 0}
   objectToFollow: {fileID: 0}
+--- !u!114 &-7735651491431483354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6565291185878189203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d683f69fa54927941d89f30024cd0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentReference: 
+  sceneBasedID: 
+  stickToPrefab: 1
