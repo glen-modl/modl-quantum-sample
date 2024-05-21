@@ -85,7 +85,8 @@ MonoBehaviour:
       MutableMode: 0
     MapEntities: []
   Prototypes:
-  - CharacterController2D: []
+  - PlayerLink: []
+    CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
@@ -172,77 +173,6 @@ MonoBehaviour:
           RawValue: 0
         Z:
           RawValue: 2949119
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 32768
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 32768
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 0
-      Layer: 0
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: 131072
-        Y:
-          RawValue: 131072
-        Z:
-          RawValue: 0
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []

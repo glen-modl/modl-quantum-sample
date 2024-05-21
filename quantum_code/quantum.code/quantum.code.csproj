@@ -83,6 +83,7 @@
     <Compile Include="FrameContext.User.cs" />
     <Compile Include="MyCustomPlayer\MovementSystem.cs" />
     <Compile Include="MyCustomPlayer\PlayerCommandsSystem.cs" />
+    <Compile Include="MyCustomPlayer\PlayerSpawnSystem.cs" />
     <Compile Include="RuntimeConfig.User.cs" />
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />
@@ -94,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MyCustomPlayer\Input.qtn" />
+    <None Include="MyCustomPlayer\PlayerLink.qtn" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
