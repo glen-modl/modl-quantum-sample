@@ -1,6 +1,7 @@
 {
     "name": "Modl.Internal",
     "references": [
+    "PhotonQuantum"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

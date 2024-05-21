@@ -128,6 +128,8 @@ namespace Modl.Internal.RuntimeData
                 case PropertyInfo info:
                 {
                     info.SetValue(component, val);
+                        Bootstrap.Instance.PropertySet(component, info, val);
+                        
                     break;
                 }
                 default:
