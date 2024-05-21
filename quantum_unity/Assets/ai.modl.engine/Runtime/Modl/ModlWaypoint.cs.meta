@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/com.modl-ai.platform/Runtime/Modl/Shared/LoadSignalStruct.cs.meta
+guid: 41a19631406bb4dfeb463bb4f558ff06
+========
+guid: ffb26d68efc5e401ebf5ac862436cbfd
+>>>>>>>> main:Assets/com.modl-ai.platform/Runtime/Modl/ModlWaypoint.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

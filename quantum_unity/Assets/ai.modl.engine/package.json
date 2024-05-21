@@ -1,0 +1,11 @@
+{
+  "name": "ai.modl.engine",
+  "publishConfig": {
+    "registry": "https://modlai.jfrog.io/artifactory/api/npm/modl-npm/"
+  },
+  "repository": "git://github.com/modl-ai/UnityPlugin.git",
+  "version": "3.1.5",
+  "displayName": "modl AI Engine",
+  "description": "Plugin provides access to the modl AI Engine.\nThe package contains modl AI Engine multi-platform libraries and the modl.ai plugin GUI.",
+  "unity": "2019.4"
+}

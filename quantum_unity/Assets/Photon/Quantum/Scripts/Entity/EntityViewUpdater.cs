@@ -367,17 +367,20 @@ public unsafe class EntityViewUpdater : MonoBehaviour {
     }
   }
 
-  protected virtual EntityView CreateEntityViewInstance(EntityViewAsset asset, Vector3? position = null, Quaternion? rotation = null) {
-    Debug.Assert(asset.View != null);
+    protected virtual EntityView CreateEntityViewInstance(EntityViewAsset asset, Vector3? position = null, Quaternion? rotation = null)
+    {
+        Debug.Assert(asset.View != null);
+        var view = position.HasValue && rotation.HasValue ?
+            GameObject.Instantiate(asset.View, position.Value, rotation.Value) :
+            GameObject.Instantiate(asset.View);
+        if (asset.name == "PlayerCharacterEntityView")
+        {
+            Bootstrap.Instance.ObjectToTrack = view.gameObject;
+        }
+        return view;
+    }
 
-    var view = position.HasValue && rotation.HasValue ? 
-        GameObject.Instantiate(asset.View, position.Value, rotation.Value) :
-        GameObject.Instantiate(asset.View);
-
-    return view;
-  }
-
-  protected virtual void DestroyEntityViewInstance(EntityView instance) {
+    protected virtual void DestroyEntityViewInstance(EntityView instance) {
     GameObject.Destroy(instance.gameObject);
   }
 
