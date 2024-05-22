@@ -1,0 +1,10 @@
+{
+    "MapList": [
+        {
+            "Name": "Game",
+            "Commands": "",
+            "ServerCommands": "",
+            "MapImageFile": "capturedLevels\\Game_TopView_InGameLighting_1ppu"
+        }
+    ]
+}
