@@ -8,8 +8,12 @@ namespace Quantum
         {
             for (int i = 0; i < f.PlayerCount; i++)
             {
-                var command = f.GetPlayerCommand(i) as CommandSpawnEnemy;
-                command?.Execute(f);
+                var command = f.GetPlayerCommand(i) as CommandResetPosition;
+                if(command != null)
+                {
+                    f.Signals.OnPlayerPositionReset(command.Position);
+                }
+                
             }
         }
     }

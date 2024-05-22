@@ -1,18 +1,18 @@
 ﻿using Photon.Deterministic;
+
 namespace Quantum
 {
-    public class CommandSpawnEnemy : DeterministicCommand
+    public class CommandResetPosition : DeterministicCommand
     {
-        public long enemyPrototypeGUID;
+        public FPVector3 Position;
 
         public override void Serialize(BitStream stream)
         {
-            stream.Serialize(ref enemyPrototypeGUID);
+            stream.Serialize(ref Position);
         }
 
         public void Execute(Frame f)
         {
-            Log.Info("Command Spawn Enemy ");
         }
     }
 }

@@ -75,7 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandSetup.User.cs" />
-    <Compile Include="CommandSpawnEnemy.cs" />
+    <Compile Include="CommandResetPosition.cs" />
     <Compile Include="Core\CodeGen.cs" />
     <Compile Include="CommandSetup.Legacy.cs" />
     <Compile Include="Core\Core.cs" />

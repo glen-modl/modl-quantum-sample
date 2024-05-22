@@ -1,7 +1,9 @@
 ﻿
+using Photon.Deterministic;
+
 namespace Quantum
 {
-    public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter>
+    public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter>,  ISignalOnPlayerPositionReset
     {
         public struct Filter
         {
@@ -23,6 +25,19 @@ namespace Quantum
             }
 
             filter.CharacterController->Move(f, filter.Entity, input.Direction.XOY);
+        }
+
+        public void OnPlayerPositionReset(Frame f, FPVector3 resetPosition)
+        {
+            foreach (var (entity, actor) in f.Unsafe.GetComponentBlockIterator<PlayerLink>())
+            {
+                if (f.Unsafe.TryGetPointer<Transform3D>(entity, out var transform))
+                {
+                    transform->Position = resetPosition;
+                }
+
+                Log.Info($"OnPlayerPositionReset received value {resetPosition}");
+            }
         }
     }
 }

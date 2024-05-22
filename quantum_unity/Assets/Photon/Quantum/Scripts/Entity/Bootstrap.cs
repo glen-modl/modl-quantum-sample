@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using Photon.Deterministic;
+using Quantum;
+using System.Reflection;
 using UnityEngine;
 
 public class Bootstrap : MonoBehaviour
@@ -25,5 +27,20 @@ public class Bootstrap : MonoBehaviour
     public void PropertySet(Component member, PropertyInfo fieldInfo, object val)
     {
         Debug.Log($"Bootstrap received {member} PropertyInfo {fieldInfo} Obj Value {val}");
+
+        Vector3 pos = (Vector3)val;
+
+        FPVector3 fp_Pos = new FPVector3(
+            FixedPointMath.FloatToFixed(pos.x),
+            FixedPointMath.FloatToFixed(pos.y),
+            FixedPointMath.FloatToFixed(pos.z));
+
+        CommandResetPosition command = new CommandResetPosition()
+        {
+            Position = fp_Pos,
+        };
+
+        Debug.Log($"Sending command with position: {fp_Pos} original: {pos}");
+        QuantumRunner.Default.Game.SendCommand(command);
     }
 }
